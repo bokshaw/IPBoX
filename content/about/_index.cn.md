@@ -10,7 +10,7 @@ toc: false
 ## 关于我  
 <div style="display: flex; align-items: flex-start;">
     <div style="margin-right: 20px; text-align: center;">
-        <img src="/images/me.png" alt="Dr. Bo Xiao" style="width: 300px;">
+        <img src="../images/me.png" alt="Dr. Bo Xiao" style="width: 300px;">
         <h5>Dr. Bo Xiao</h5>
     </div>
     <div>

@@ -92,5 +92,5 @@ defaultContentLanguageInSubdir = true
 
   [params.editURL]
     enable = false
-    base = "https://github.com/"
+    base = "https://bokshaw.github.io/ipbox/"
 
