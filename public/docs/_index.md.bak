@@ -1,0 +1,95 @@
+---
+title:  Topics
+layout: index
+---
+
+<div class="mt-6"></div>
+
+<div>
+    <h2 class="text-h2 text-center font-bold leading-tight tracking-tighter md:text-4xl mt-6 dark:text-gray-300">
+    <span style="background: #277A9F; background: linear-gradient(180deg, #277A9F, #359ece); background-clip: text; -webkit-background-clip: text;">
+    Browse Topics  
+    </span>
+    <span></span>
+    </h2>
+</div>
+
+<div class="mt-8"></div>
+
+{{< hextra/feature-grid >}}
+  {{< hextra/custom-card
+    title="Patent Drafting Series"
+    subtitle="Dive into the art of patent drafting with our expert guides. Learn to articulate your inventions clearly, craft strong claims, and navigate technical requirements, ensuring robust protection for your intellectual property."
+    class="aspect-auto md:aspect-[1.1/1] max-md:min-h-[340px] hover:text-primary-600"
+    image="/images/hextra-doc.webp"
+    imageClass="top-[50%] left-[24px] w-[180%] sm:w-[110%] dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+    icon="archive"
+  >}}
+  {{< hextra/custom-card
+    title="Patent Application Series"
+    subtitle="Explore our concise guides on patent applications, offering key strategies, drafting tips, and insights into the examination process, tailored for innovators and legal professionals in the dynamic world of patents."
+    class="aspect-auto md:aspect-[1.1/1] max-lg:min-h-[340px]"
+    image="/images/hextra-markdown.webp"
+    imageClass="top-[50%] left-[36px] w-[180%] sm:w-[110%] dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+    icon="archive"
+  >}}
+  {{< hextra/custom-card
+    title="Full Text Search"
+    subtitle="Our search feature allows you to delve deep into specific topics, find detailed answers to your queries, and explore the complexities of patent law and application processes. Just type in your keywords."
+    class="aspect-auto md:aspect-[1.1/1] max-md:min-h-[340px]"
+    image="/images/hextra-search.webp"
+    imageClass="top-[50%] left-[36px] w-[110%] sm:w-[110%] dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+    icon="document-search"
+  >}}
+  {{< hextra/custom-card
+    title="WORD Template for Your Patent Drafting"
+    subtitle="Our simple guide teaches you to create a WORD template, combining functionality with aesthetic elegance."
+    icon="document-text"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/custom-card
+    title="Checklist for Your Patent Application"
+    subtitle="A walkthrough of the essential documents for filing your US patent application."
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+    icon="document-text"
+  >}}
+  {{< hextra/custom-card
+    title="IP Strategy for Tech Startups and Small Companies"
+    subtitle="Build with GitHub Actions, and host for free on GitHub Pages. Alternatively it can be hosted on any static hosting service."
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+    icon="document-text"
+  >}}
+  {{< hextra/custom-card
+    title="Patent Claims"
+    subtitle=""
+    link="/en/articles/drafting/claim"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+    icon="document-text"
+  >}}
+  {{< hextra/custom-card
+    title="Information Disclosure Statement"
+    subtitle=""
+    link="/en/articles/application/ids"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+    icon="document-text"
+  >}}
+  {{< hextra/custom-card
+    title="Understanding the Basics of Intellectual Property"
+    subtitle=""
+    link="/en/articles/ip/ip_basics_w10"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+    icon="document-text"
+  >}}
+  {{< hextra/custom-card
+    title="And Much More..."
+    icon="sparkles"
+    subtitle="Syntax highlighting / Table of contents / SEO / RSS / LaTeX / Mermaid / Customizable / and more..."
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+    icon="document-text"
+  >}}
+{{< /hextra/feature-grid >}}
+
+<div class="mt-6"></div>

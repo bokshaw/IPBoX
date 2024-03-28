@@ -1,0 +1,11 @@
+<div class="mt-1.5 flex items-center gap-1 overflow-hidden text-lg font-medium text-link-100 dark:text-gray-400 contrast-more:text-current">
+  {{ $index := 0 }} {{/* Initialize a counter variable */}}
+  {{ range .Ancestors.Reverse }}
+    {{ if eq $index 2 }} {{/* Check if the current item is the second one (index starts at 0) */}}
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-link-200 dark:hover:text-gray-100">
+        <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+      </div>
+    {{ end }}
+    {{ $index = add $index 1 }} {{/* Increment the counter by 1 for each iteration */}}
+  {{ end }}
+</div>

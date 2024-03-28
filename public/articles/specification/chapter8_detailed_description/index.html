@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+
+  <title>Detailed Description of Embodiments – IPBOX</title>
+  <meta name="description" content="The core of the specification is the detailed description, which provides a comprehensive understanding of the invention. It aims to:
+Enable the replication and application of the invention. Explain the claims clearly and precisely. Highlight the unique advantages and benefits of the invention. Outline the optimal construction or implementation method. Introduce alternative embodiments or variations. Drafting SequenceThough the detailed description typically precedes the claims and drawings within the specification, an effective approach involves drafting it after the claims and drawings are fully developed or once a draft of the claims is in place." />
+  
+  
+    <link rel="canonical" href="//localhost:1313/articles/specification/chapter8_detailed_description/" itemprop="url" />
+  
+
+  
+
+<meta property="og:title" content="Detailed Description of Embodiments" />
+<meta property="og:description" content="The core of the specification is the detailed description, which provides a comprehensive understanding of the invention. It aims to:
+Enable the replication and application of the invention. Explain the claims clearly and precisely. Highlight the unique advantages and benefits of the invention. Outline the optimal construction or implementation method. Introduce alternative embodiments or variations. Drafting SequenceThough the detailed description typically precedes the claims and drawings within the specification, an effective approach involves drafting it after the claims and drawings are fully developed or once a draft of the claims is in place." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/articles/specification/chapter8_detailed_description/" /><meta property="article:section" content="articles" />
+
+
+
+  <meta itemprop="name" content="Detailed Description of Embodiments">
+<meta itemprop="description" content="The core of the specification is the detailed description, which provides a comprehensive understanding of the invention. It aims to:
+Enable the replication and application of the invention. Explain the claims clearly and precisely. Highlight the unique advantages and benefits of the invention. Outline the optimal construction or implementation method. Introduce alternative embodiments or variations. Drafting SequenceThough the detailed description typically precedes the claims and drawings within the specification, an effective approach involves drafting it after the claims and drawings are fully developed or once a draft of the claims is in place.">
+
+<meta itemprop="wordCount" content="2445">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Detailed Description of Embodiments"/>
+<meta name="twitter:description" content="The core of the specification is the detailed description, which provides a comprehensive understanding of the invention. It aims to:
+Enable the replication and application of the invention. Explain the claims clearly and precisely. Highlight the unique advantages and benefits of the invention. Outline the optimal construction or implementation method. Introduce alternative embodiments or variations. Drafting SequenceThough the detailed description typically precedes the claims and drawings within the specification, an effective approach involves drafting it after the claims and drawings are fully developed or once a draft of the claims is in place."/>
+
+    <link href="/css/compiled/main.css" rel="stylesheet" />
+
+
+
+  <link href="/css/custom.css" rel="stylesheet" />
+
+
+
+  
+
+
+  <script>
+     
+    const defaultTheme = 'system';
+
+    const setDarkTheme = () => {
+      document.documentElement.classList.add("dark");
+      document.documentElement.style.colorScheme = "dark";
+    }
+    const setLightTheme = () => {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.style.colorScheme = "light";
+    }
+
+    if ("color-theme" in localStorage) {
+      localStorage.getItem("color-theme") === "dark" ? setDarkTheme() : setLightTheme();
+    } else {
+      defaultTheme === "dark" ? setDarkTheme() : setLightTheme();
+      if (defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? setDarkTheme() : setLightTheme();
+      }
+    }
+  </script>
+
+  
+</head>
+<body dir="ltr"><div class="nav-container sticky top-0 z-20 w-full bg-transparent print:hidden">
+  <div class="nav-container-blur pointer-events-none absolute z-[-1] h-full w-full bg-white dark:bg-dark shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] contrast-more:shadow-[0_0_0_1px_#000] dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] contrast-more:dark:shadow-[0_0_0_1px_#fff]"></div>
+
+  <nav class="mx-auto flex items-center justify-start gap-2 h-16 px-6 max-w-[90rem]">
+    <a class="flex items-center hover:opacity-75 mr-4" href="/">
+        <img class="block dark:hidden" src="/images/logo.svg" alt="IPBOX" height="20" width="20" />
+        <img class="hidden dark:block" src="/images/logo_dark.svg" alt="IPBOX" height="20" width="20" />
+        <span class="mx-2 font-extrabold inline select-none text-link-200" title="IPBOX">IPBOX</span>
+    </a><a
+              title="PATENT DRAFTING"
+              href="/articles/specification"
+              
+              class="text-base hover:text-primary-600 contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-4 md:inline-block font-medium"
+            >
+              <span class="text-center menu-font">PATENT DRAFTING</span>
+            </a><a
+              title="DOCS"
+              href="/docs/application"
+              
+              class="text-base hover:text-primary-600 contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-4 md:inline-block text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+            >
+              <span class="text-center menu-font">DOCS</span>
+            </a><a
+              title="ABOUT"
+              href="/about/"
+              
+              class="text-base hover:text-primary-600 contrast-more:text-gray-700 contrast-more:dark:text-gray-100 relative -ml-2 hidden whitespace-nowrap p-4 md:inline-block text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+            >
+              <span class="text-center menu-font">ABOUT</span>
+            </a><button type="button" aria-label="Menu" class="hamburger-menu -mr-2 rounded p-2 active:bg-gray-400/20 md:hidden"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+    
+    <div class="search-wrapper relative md:w-64 ltr:ml-auto">
+      <div class="relative flex items-center text-gray-900 contrast-more:text-gray-800 dark:text-gray-300 contrast-more:dark:text-gray-300">
+        <input placeholder="Search..." class="search-input block w-full appearance-none rounded-lg px-3 py-2 transition-colors text-base leading-tight md:text-sm bg-black/[.05] dark:bg-gray-50/10 focus:bg-white dark:focus:bg-dark placeholder:text-gray-500 dark:placeholder:text-gray-400 contrast-more:border contrast-more:border-current" type="search" value="" spellcheck="false">
+        <kbd class="absolute my-1.5 select-none ltr:right-1.5 rtl:left-1.5 h-5 rounded bg-white px-1.5 font-mono text-[10px] font-medium text-gray-500 border dark:border-gray-100/20 dark:bg-dark/50 contrast-more:border-current contrast-more:text-current contrast-more:dark:border-current items-center gap-1 transition-opacity pointer-events-none hidden sm:flex">
+          CTRL K
+        </kbd>
+      </div>
+    
+      <div>
+        <ul class="search-results hextra-scrollbar hidden border border-gray-200 bg-white text-gray-100 dark:border-neutral-800 dark:bg-neutral-900 absolute top-full z-20 mt-2 overflow-auto overscroll-contain rounded-xl py-2.5 shadow-xl max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] md:max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] inset-x-0 ltr:md:left-auto rtl:md:right-auto contrast-more:border contrast-more:border-gray-900 contrast-more:dark:border-gray-50 w-screen min-h-[100px] max-w-[min(calc(100vw-2rem),calc(100%+20rem))]" style="transition: max-height 0.2s ease 0s;"></ul>
+      </div>
+    </div><div class="flex justify-items-start ">
+    <button
+      title="Change language"
+      data-state="closed"
+      class="language-switcher h-7 rounded-md px-2 text-left text-xs font-medium text-gray-600 transition-colors dark:text-gray-400 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 grow"
+      type="button"
+      aria-label="Change language"
+    >
+      <div class="flex items-center gap-2 capitalize"><svg height=12 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg><span>English</span></div>
+    </button>
+    <ul
+      class="language-options hidden z-20 max-h-64 overflow-auto rounded-md ring-1 ring-black/5 bg-white py-1 text-sm shadow-lg dark:ring-white/20 dark:bg-neutral-800"
+      style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    >
+      
+        
+        <li class="flex flex-col">
+          <a
+            href="/articles/specification/chapter8_detailed_description/"
+            class="text-gray-800 dark:text-gray-100 hover:bg-primary-50 hover:text-primary-600 hover:dark:bg-primary-500/10 hover:dark:text-primary-600 relative cursor-pointer whitespace-nowrap py-1.5 transition-colors ltr:pl-3 ltr:pr-9 rtl:pr-3 rtl:pl-9"
+          >English<span class="absolute inset-y-0 flex items-center ltr:right-3 rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
+        </li>
+      
+        
+        <li class="flex flex-col">
+          <a
+            href="/cn/"
+            class="text-gray-800 dark:text-gray-100 hover:bg-primary-50 hover:text-primary-600 hover:dark:bg-primary-500/10 hover:dark:text-primary-600 relative cursor-pointer whitespace-nowrap py-1.5 transition-colors ltr:pl-3 ltr:pr-9 rtl:pr-3 rtl:pl-9"
+          >简体中文</a>
+        </li>
+      </ul>
+  </div></nav>
+</div>
+  <div class='mx-auto flex max-w-screen-xl'>
+    <div class="mobile-menu-overlay [transition:background-color_1.5s_ease] fixed inset-0 z-10 bg-black/80 dark:bg-black/60 hidden"></div>
+<aside class="sidebar-container flex flex-col print:hidden md:top-16 md:shrink-0 md:w-64 md:self-start max-md:[transform:translate3d(0,-100%,0)] md:sticky">
+  
+  <div class="px-4 pt-4 md:hidden">
+    <div class="search-wrapper relative md:w-64">
+  <div class="relative flex items-center text-gray-900 contrast-more:text-gray-800 dark:text-gray-300 contrast-more:dark:text-gray-300">
+    <input
+      placeholder="Search..."
+      class="search-input block w-full appearance-none rounded-lg px-3 py-2 transition-colors text-base leading-tight md:text-sm bg-black/[.05] dark:bg-gray-50/10 focus:bg-white dark:focus:bg-dark placeholder:text-gray-500 dark:placeholder:text-gray-400 contrast-more:border contrast-more:border-current"
+      type="search"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="absolute my-1.5 select-none ltr:right-1.5 rtl:left-1.5 h-5 rounded bg-white px-1.5 font-mono text-[10px] font-medium text-gray-500 border dark:border-gray-100/20 dark:bg-dark/50 contrast-more:border-current contrast-more:text-current contrast-more:dark:border-current items-center gap-1 transition-opacity pointer-events-none hidden sm:flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="search-results hextra-scrollbar hidden border border-gray-200 bg-white text-gray-100 dark:border-neutral-800 dark:bg-neutral-900 absolute top-full z-20 mt-2 overflow-auto overscroll-contain rounded-xl py-2.5 shadow-xl max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] md:max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] inset-x-0 ltr:md:left-auto rtl:md:right-auto contrast-more:border contrast-more:border-gray-900 contrast-more:dark:border-gray-50 w-screen min-h-[100px] max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+  </div>
+</div>
+
+  </div>
+  <div class="hextra-scrollbar overflow-y-auto overflow-x-hidden p-4 grow md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+    <ul class="flex flex-col gap-1 md:hidden">
+      
+      
+          <li class=""><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/about/"
+    
+  >
+    </a></li>
+          <li class="open"><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/"
+    
+  >Articles
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col open"><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/"
+    
+  >PATENT DRAFT ESSENTIALS
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter1_introduction/"
+    
+  >Introduction
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter2_title/"
+    
+  >Title
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter3_crossreference/"
+    
+  >Cross-reference
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter4_tech_field/"
+    
+  >Technical Field
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter5_background/"
+    
+  >Background
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter6_summary/"
+    
+  >Summary
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter7_brief_description/"
+    
+  >Brief description
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 contrast-more:border contrast-more:border-primary-500 dark:bg-primary-400/10 dark:text-primary-600 contrast-more:dark:border-primary-500"
+    href="/articles/specification/chapter8_detailed_description/"
+    
+  >Detailed Description
+    </a>
+  
+    <ul class='flex flex-col gap-1 relative before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] dark:before:bg-neutral-800 ltr:pl-3 ltr:before:left-0 rtl:pr-3 rtl:before:right-0 ltr:ml-3 rtl:mr-3'><li>
+              <a
+                href="#drafting-sequence"
+                class="flex rounded px-2 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:border gap-2 before:opacity-25 before:content-['#'] text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:text-gray-900 contrast-more:dark:text-gray-50 contrast-more:border-transparent contrast-more:hover:border-gray-900 contrast-more:dark:hover:border-gray-50"
+              >Drafting Sequence</a>
+            </li>
+          <li>
+              <a
+                href="#terminology-management"
+                class="flex rounded px-2 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:border gap-2 before:opacity-25 before:content-['#'] text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:text-gray-900 contrast-more:dark:text-gray-50 contrast-more:border-transparent contrast-more:hover:border-gray-900 contrast-more:dark:hover:border-gray-50"
+              >Terminology Management</a>
+            </li>
+          <li>
+              <a
+                href="#organizing-the-detailed-description"
+                class="flex rounded px-2 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:border gap-2 before:opacity-25 before:content-['#'] text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:text-gray-900 contrast-more:dark:text-gray-50 contrast-more:border-transparent contrast-more:hover:border-gray-900 contrast-more:dark:hover:border-gray-50"
+              >Organizing the detailed description</a>
+            </li>
+          <li>
+              <a
+                href="#writing-plainly"
+                class="flex rounded px-2 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:border gap-2 before:opacity-25 before:content-['#'] text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:text-gray-900 contrast-more:dark:text-gray-50 contrast-more:border-transparent contrast-more:hover:border-gray-900 contrast-more:dark:hover:border-gray-50"
+              >Writing plainly</a>
+            </li>
+          <li>
+              <a
+                href="#transforming-technical-documents"
+                class="flex rounded px-2 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:border gap-2 before:opacity-25 before:content-['#'] text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:text-gray-900 contrast-more:dark:text-gray-50 contrast-more:border-transparent contrast-more:hover:border-gray-900 contrast-more:dark:hover:border-gray-50"
+              >Transforming Technical Documents</a>
+            </li>
+          </ul>
+  
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter9_claims/"
+    
+  >Claims
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter10_abstract/"
+    
+  >Abstract
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div></li>
+          <li class=""><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/docs/"
+    
+  >Docs
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'></ul>
+      </div></li>
+      <li><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/about/"
+    
+  >About</a></li>
+    
+    </ul>
+
+    <ul class="flex flex-col gap-1 max-md:hidden">
+        
+          <li class="open"><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/"
+    
+  >PATENT DRAFT ESSENTIALS
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg></span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter1_introduction/"
+    
+  >Introduction
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter2_title/"
+    
+  >Title
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter3_crossreference/"
+    
+  >Cross-reference
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter4_tech_field/"
+    
+  >Technical Field
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter5_background/"
+    
+  >Background
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter6_summary/"
+    
+  >Summary
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter7_brief_description/"
+    
+  >Brief description
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 contrast-more:border contrast-more:border-primary-500 dark:bg-primary-400/10 dark:text-primary-600 contrast-more:dark:border-primary-500"
+    href="/articles/specification/chapter8_detailed_description/"
+    
+  >Detailed Description
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter9_claims/"
+    
+  >Claims
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/articles/specification/chapter10_abstract/"
+    
+  >Abstract
+    </a>
+              
+            </li></ul>
+      </div></li>
+        
+      <li><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/about/"
+    
+  >About</a></li>
+    
+      </ul>
+    </div>
+  
+  
+    <div class=" justify-end sticky bottom-0 bg-white dark:bg-dark mx-4 py-4 shadow-[0_-12px_16px_#fff] flex items-center gap-2 dark:border-neutral-800 dark:shadow-[0_-12px_16px_#111] contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:shadow-none border-t" data-toggle-animation="show"><div class="flex justify-items-start grow">
+    <button
+      title="Change language"
+      data-state="closed"
+      class="language-switcher h-7 rounded-md px-2 text-left text-xs font-medium text-gray-600 transition-colors dark:text-gray-400 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 grow"
+      type="button"
+      aria-label="Change language"
+    >
+      <div class="flex items-center gap-2 capitalize"><svg height=12 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg><span>English</span></div>
+    </button>
+    <ul
+      class="language-options hidden z-20 max-h-64 overflow-auto rounded-md ring-1 ring-black/5 bg-white py-1 text-sm shadow-lg dark:ring-white/20 dark:bg-neutral-800"
+      style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    >
+      
+        
+        <li class="flex flex-col">
+          <a
+            href="/articles/specification/chapter8_detailed_description/"
+            class="text-gray-800 dark:text-gray-100 hover:bg-primary-50 hover:text-primary-600 hover:dark:bg-primary-500/10 hover:dark:text-primary-600 relative cursor-pointer whitespace-nowrap py-1.5 transition-colors ltr:pl-3 ltr:pr-9 rtl:pr-3 rtl:pl-9"
+          >English<span class="absolute inset-y-0 flex items-center ltr:right-3 rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
+        </li>
+      
+        
+        <li class="flex flex-col">
+          <a
+            href="/cn/"
+            class="text-gray-800 dark:text-gray-100 hover:bg-primary-50 hover:text-primary-600 hover:dark:bg-primary-500/10 hover:dark:text-primary-600 relative cursor-pointer whitespace-nowrap py-1.5 transition-colors ltr:pl-3 ltr:pr-9 rtl:pr-3 rtl:pl-9"
+          >简体中文</a>
+        </li>
+      </ul>
+  </div><button
+  title="Change theme"
+  data-theme="light"
+  class="theme-toggle group h-7 rounded-md px-2 text-left text-xs font-medium text-gray-600 transition-colors dark:text-gray-400 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-primary-100/5 dark:hover:text-gray-50"
+  type="button"
+  aria-label="Change theme"
+>
+  <div class="flex items-center gap-2 capitalize"><svg height=12 class="group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><svg height=12 class="group-data-[theme=dark]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg></div>
+</button>
+</div></aside>
+    
+<nav class="hextra-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
+    <div class="hextra-scrollbar sticky top-16 overflow-y-auto pr-4 pt-6 text-sm [hyphens:auto] max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:-mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#drafting-sequence">Drafting Sequence
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#terminology-management">Terminology Management
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#recognizing-and-utilizing-established-terms">Recognizing and Utilizing Established Terms
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#general-technical-terms">General Technical Terms
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#generic-terms-vs-descriptive-terms">Generic Terms vs. Descriptive Terms
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#relative-terms">Relative terms
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#proper-use-of-acronyms">Proper Use of Acronyms
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#consistency-in-term-usage">Consistency in Term Usage
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#organizing-the-detailed-description">Organizing the detailed description
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#writing-plainly">Writing plainly
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#transforming-technical-documents">Transforming Technical Documents
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#adapting-scientific-papers">Adapting Scientific Papers
+        </a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="ltr:pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 contrast-more:text-gray-900 contrast-more:underline contrast-more:dark:text-gray-50 w-full break-words" href="#key-adjustments">Key Adjustments
+        </a>
+      </li></ul>
+      <div class="mt-8 border-t bg-white pt-8 shadow-[0_-12px_16px_white] dark:bg-dark dark:shadow-[0_-12px_16px_#111] sticky bottom-0 flex flex-col items-start gap-2 pb-8 dark:border-neutral-800 contrast-more:border-t contrast-more:border-neutral-400 contrast-more:shadow-none contrast-more:dark:border-neutral-400">
+        <button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="transition-all transition duration-75 opacity-0 text-xs font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 contrast-more:text-gray-800 contrast-more:dark:text-gray-50">
+          <span>Scroll to top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline ml-1 h-3.5 w-3.5 border rounded-full border-gray-500 hover:border-gray-900 dark:border-gray-400 dark:hover:border-gray-100 contrast-more:border-gray-800 contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+    <article class="w-full break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main class="w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
+        <div class="mt-1.5 flex items-center gap-1 overflow-hidden text-lg font-medium text-link-100 dark:text-gray-400 contrast-more:text-current">
+   
+  
+    
+     
+  
+    
+     
+  
+     
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-link-200 dark:hover:text-gray-100">
+        <a href="//localhost:1313/articles/specification/">PATENT DRAFT ESSENTIALS</a>
+      </div>
+    
+     
+  
+</div>
+
+        <div class="content">
+          <div class="border-bottom-1">
+            <h1 class="text-start gap-2 sm:px-4 pt-8 md:pt-12">Detailed Description of Embodiments</h1>
+          </div>
+          <p>The core of the specification is the detailed description, which provides a comprehensive understanding of the invention. It aims to:</p>
+<ul>
+<li>Enable the replication and application of the invention.</li>
+<li>Explain the claims clearly and precisely.</li>
+<li>Highlight the unique advantages and benefits of the invention.</li>
+<li>Outline the optimal construction or implementation method.</li>
+<li>Introduce alternative embodiments or variations.</li>
+</ul>
+<h2>Drafting Sequence<span class="absolute -mt-20" id="drafting-sequence"></span>
+    <a href="#drafting-sequence" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Though the detailed description typically precedes the claims and drawings within the specification, an effective approach involves drafting it after the claims and drawings are fully developed or once a draft of the claims is in place. This workflow uses the drawings as a visual step-by-step guide and the claims as a blueprint for the elements requiring detailed elaboration.</p>
+<p>This approach significantly simplifies cross-referencing between the drawings and claims, ensuring accurate alignment and reference numbering for each component. The primary goal is to ensure that every feature mentioned in the claims is depicted in the drawings and thoroughly described.</p>
+<h2>Terminology Management<span class="absolute -mt-20" id="terminology-management"></span>
+    <a href="#terminology-management" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Creating a terminology base is an important initial step. It involves identifying and listing key technical terms that describe crucial features of the invention. This step is particularly critical for terms that refer to parts, structures, or elements indicated by numbers in the drawings. Establishing a clear and consistent set of terms helps with accurate communication of the invention&rsquo;s specifications and streamlines the drafting process.</p>
+<h4>Recognizing and Utilizing Established Terms<span class="absolute -mt-20" id="recognizing-and-utilizing-established-terms"></span>
+    <a href="#recognizing-and-utilizing-established-terms" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>When preparing the specification or tranlating one, it’s important to identify and use established terms in the invention’s field. Avoid creating new terms if established ones are available. For well-understood terms, reference existing, reliable definitions. If introducing new terminology, define these terms clearly to maintain coherence throughout the document.</p>
+<p>For example, an inventor describing a new water filter might use &ldquo;micro-cleansing flow&rdquo; to emphasize its ability to remove impurities on a microscopic level. However, the established term “microfiltration” is already well-understood within the industry and conveys a similar concept. If still using “micro-cleansing flow,” it should be clearly described or defined, perhaps stating, “‘micro-cleansing flow’ refers to a process that achieves 99.9% removal of particles smaller than 1 microns.”</p>
+<h4>General Technical Terms<span class="absolute -mt-20" id="general-technical-terms"></span>
+    <a href="#general-technical-terms" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>The choice between a common term and a more descriptive or technical term can significantly influence the clarity, scope, and enforceability of a patent. For instance, deciding between &ldquo;muffler&rdquo; and &ldquo;silencer&rdquo; or &ldquo;a silencing apparatus&rdquo; largely depends on the intended application of the invention. If the design is specifically for use in an automobile exhaust system, &ldquo;muffler&rdquo; is the appropriate term, as illustrated by &ldquo;a muffler for an exhaust system of a vehicle.&rdquo;</p>
+<p>In contrast, if the invention has broader applications, including automobiles, HVAC systems, or industrial machinery, terms like “silencing apparatus” or “silencer” would be more suitable. This broader applicability should be clearly indicated in the specification, even with a simple mention, such as “a silencing apparatus, designed to be installed in the exhaust pathway or similar components of an automobile, HVAC systems, or other industrial machinery.” That makes the patent’s description accurately reflects the invention’s intended use and potential, thereby enhancing its legal robustness and market relevance.</p>
+<h4>Generic Terms vs. Descriptive Terms<span class="absolute -mt-20" id="generic-terms-vs-descriptive-terms"></span>
+    <a href="#generic-terms-vs-descriptive-terms" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Patent description often employs generic designations “first,” “second,” “third,” etc., to differentiate elements within the same category, such as “first layer,” “second layer,” “first module,” “second module,” and so forth. This use diverges from typical grammatical conventions associated with ordinal numbers,  as phrases like “a first layer” or “a second layer” appear unconventional for those new to patent documentation. However, this practice is widely accepted to denote similar elements in patent specifications. This naming method offers flexibility without the necessity of assigning specific names that indicate material composition or function, such as “metal layer” or “feedback signal.”</p>
+<p>Conversely, descriptive terms like “metal layer” and “conductive layer” provide insights into the composition, functionality, or characteristics of the elements they describe. These terms convey specific information that facilitates the understanding of the element’s role and nature within the invention. Nevertheless, using specific descriptive terms can inadvertently limit the scope of the invention. For instance, specifying a “metal layer” directly implies the use of metal, whereas “feedback signal” indicates a specific signal flow directionality.</p>
+<p>The use of generic labels like “first” and “second” helps avoid these limitations. In instances where inventions include multiple similar element groups, a mix of generic and descriptive naming improves readability. For example, terms like “first electrode layer,” “second electrode layer,” “first supporting layer,” and “second supporting layer” make the naming convention more accessible and comprehensible.</p>
+<p>However, employing such generic designations can make the invention more challenging to understand without closely referencing the drawings. Moreover, if not carefully applied, it becomes difficult to spot errors in element designation—errors that are more easily identified with descriptive names. For instance, a statement like “the metal layer insulates the leak current” is easier to flag for correction than “the second layer insulates the leak current.”</p>
+<p>Hence, when utilizing designations like “first,” “second,” and “third,” ensure that they accurately represent elements performing specific functions or possessing distinct properties. Where possible, naming elements based on their function or application can significantly improve clarity. For instance, substituting “a first layer is an electrode” with “a conductive layer is an electrode,” or renaming “a first module that outputs a high-frequency signal” to “a high-frequency output module” simplifies comprehension and reduces reference errors.</p>
+<p>It’s also important to note that when employing generic designations such as “first,” “second,” or directional terms like “upper,” “lower,” “left,” “right” for naming, it is beneficial to include clarifying statements in the specification. For clarity, the specification may include statements such as:</p>
+<div class="admonition-content-100">
+The terms "first," "second," and similar words in this disclosure are not intended to signify any specific order, quantity, or importance but are utilized solely to differentiate among various components.
+</div>
+<div class="admonition-content-100">
+The terms "Upper," "lower," "left," "right," and the like are used to describe the relative positional relationship. When the absolute position of the object being described is changed, the relative positional relationship may also change accordingly.
+</div>
+<h4>Relative terms<span class="absolute -mt-20" id="relative-terms"></span>
+    <a href="#relative-terms" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>The precision of language is pivotal in patent drafting, especially when employing relative terms such as “substantial,” “about,” and “approximately” within the specification and, crucially, the claims. These terms provide valuable flexibility by broadening the invention&rsquo;s scope coverage. Nonetheless, it is vital to define these terms with precision to preserve the document&rsquo;s clarity and enforceability, preventing them from being deemed “indefinite.”</p>
+<p>Terms like “substantial” do not inherently lack definiteness, as “claim language employing terms of degree has been found definite where it provided enough certainty to one of skill in the art when read in the context of the invention” (Interval Licensing LLC v. AOL, Inc., 766 F.3d 1364, 1370, 112 USPQ2d 1188, 1192-93 (Fed. Cir. 2014), citing Eibel Process Co. v. Minnesota &amp; Ontario Paper Co., 261 U.S. 45, 65-66 (1923)). However, they still carry the risk of failing to convince the examiner of their certainty. Moreover, their potential indefiniteness could complicate enforcement and litigation. Therefore, using these relative terms should be with caution in the description, particularly when incorporating them into claim language.</p>
+<p>However, it is not discouraged to avoid the relative term in the writing description, as they capture variations of an invention, thus preventing the claims from being overly restricted to exact measurements or values. Nevertheless, quantifying these relative terms with specific definitions is essential to maintain the document’s legal and professional integrity.</p>
+<div class="admonition-content">
+<span style="font-weight: bold; color: #FF4500;">Original:</span> “A temperature is set about 100°C.”<br>
+<span style="font-weight: bold; color: #FF4500;">Revised:</span> “A temperature is set within a range of ±10°C of 100°C” or “A temperature is set about 100°C, herein defined as ‘about’ to be within ±10°C of the stated value.”<br>
+<p><span style="font-weight: bold; color: #FF4500;">Original:</span> “Component A substantially contains Component B.” <br>
+<span style="font-weight: bold; color: #FF4500;">Revised:</span> “Component A contains at least 90% of Component B by weight” or “Component A substantially contains Component B, where ‘substantially contains’ is defined as comprising at least 90% by weight.”</p>
+<p><span style="font-weight: bold; color: #FF4500;">Original:</span> “The threshold voltage is high.”/“the leakage current is low.”<br>
+<span style="font-weight: bold; color: #FF4500;">Revised:</span> “the threshold voltage exceeds [voltage value]” and “the leakage current is below [current value]” or “the threshold voltage is deemed high, being above [voltage value]” and “The leakage current remains low, falling below [current value].”</p>
+</div>
+<p>It is generally acceptable to include a definition either at the beginning or at the end of the detailed descriptions to define the relative terms appeared in the description. This can be articulated by stating:</p>
+<div class="admonition-content">
+The terms "about" and "substantial" as used in the disclosure mean a variation of at least 90% or a tolerance within 10% of the stated value.
+</div>
+<h4>Proper Use of Acronyms<span class="absolute -mt-20" id="proper-use-of-acronyms"></span>
+    <a href="#proper-use-of-acronyms" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>For the first use of an acronym, always spell out the full term and follow it with the acronym in parentheses. This practice should be followed for all acronyms, except for trademarks or brand names.</p>
+<p>For instance, in the case mentioned earlier regarding the silencing apparatus, the term &ldquo;HVAC&rdquo; should be presented in its full term if not referred earlier, “An apparatus for silencing, designed for installation in the exhaust pathway or similar components of an automobile, Heating, Ventilation, and Air Conditioning (HVAC) systems, or other industrial machinery.”</p>
+<h4>Consistency in Term Usage<span class="absolute -mt-20" id="consistency-in-term-usage"></span>
+    <a href="#consistency-in-term-usage" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Consistency in term usage in patent drafting is not merely a matter of stylistic preference but a critical component of effective patent strategy. It demands attention to detail from the initial drafting through the final review stages. Once a component is referred to by a specific name, stick with it to avoid confusion. Ensure consistency in the labeling and naming of parts across drawings and descriptions.</p>
+<h2>Organizing the detailed description<span class="absolute -mt-20" id="organizing-the-detailed-description"></span>
+    <a href="#organizing-the-detailed-description" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The drawings act as the guide for organizing the detailed description. The visual representation generally provides a clear overview of the invention’s design and functionality, setting the stage for the drafting process. The goal is to describe the invention in clear and precise terms.</p>
+<p>Guided by the drawings, the detailed description unfolds in a sequence that mirrors the visual representations. It usually begins with a general overview that introduces the key and innovative aspects of the invention. Subsequent sections delve into detailed descriptions of each significant component or illustrated from various angles as necessary to ensure clarity. For inventions that include specific assembly processes or feature unique operational methods, explanations of the drawing diagrams are provided to demonstrate how these elements interact.</p>
+<p>Discussions on variations, alternative embodiments, or experimental findings may be included as they relate to the main description or towards its conclusion. This approach ensures a cohesive narrative that complements the drawings, effectively narrate the invention’s story through a combination of visuals and text.</p>
+<h2>Writing plainly<span class="absolute -mt-20" id="writing-plainly"></span>
+    <a href="#writing-plainly" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>In patent drafting, the emphasis is not on striving for vivid descriptions or varied sentence structures. The writing style for the description tends to be direct, sometimes perceived as monotonous or simplistic, and occasionally repetitive. This uniformity in sentence construction is not only acceptable but often necessary to ensure the invention is presented clearly and accurately.</p>
+<p>Unlike scientific papers, where the objective is often to delve into complex theories and impress peers within rigorous analysis and discussion, the objective of patent writing is to convey the details of the invention in a manner that is both precise and comprehensible. If the description fulfills this goal, there is little need to alter the wording or style for aesthetic reasons. The key is to ensure clarity, maintain consistency across the description of the invention, and highlight the novel features of the invention.</p>
+<h2>Transforming Technical Documents<span class="absolute -mt-20" id="transforming-technical-documents"></span>
+    <a href="#transforming-technical-documents" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Transforming invention disclosures, technical briefs, or scientific papers into a patent description requires a shift in focus and presentation style. While some documents, like invention disclosures, might lack detail and require expansion to adequately describe the invention, others, such as scientific papers, often contain a wealth of information related to science and technology of the invention.</p>
+<p>However, the process of transforming those documents demands careful attention due to their inherently focused and sometimes theoretical content. Such content should be distilled and refocused to meet the practical requirements of a patent specification.</p>
+<h4>Adapting Scientific Papers<span class="absolute -mt-20" id="adapting-scientific-papers"></span>
+    <a href="#adapting-scientific-papers" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Scientific papers and similar documents are crafted with a specific purpose, often explanatory or argumentative, aimed at knowledge exchange within a scholarly context. When adapting such technical writing for a patent description, special attention is required to ensure the narrative is refocused on the invention’s unique features that warrant protection under the claims.</p>
+<p>Scientific papers extensively discuss an invention’s significance, novelty, and the advancement. However, this discourse, aimed at peer exchange, might not align well with patent examination criteria. These documents tend to emphasize the motivation behind the research, prior art analysis, exploration of new mechanisms, and the presentation of novel results. As a result, the detailed description of the invention’s structure or methodology might be underrepresented.</p>
+<p>In contrast, the patent description requires a clear and explicit delineation of the invention’s construction, organization, and intended functionality. It does this by sidelining the broader scientific context or the rigorous discussion of the results behind the invention. Patent documents focus on the specific structures, properties, or composition of the invention, with background information strictly limited to what aids in understanding the invention. Detailed discussions on prior research or theoretical explorations are minimized unless they serve to directly underscore the invention’s functionality or advantages. This markedly differentiates patent writing from academic narratives.</p>
+<h4>Key Adjustments<span class="absolute -mt-20" id="key-adjustments"></span>
+    <a href="#key-adjustments" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>To effectively transform technical or scientific documentation into a patent specification, several key adjustments are necessary. The following shifts are necessary:</p>
+<p>•	<strong>Focus on the Invention Itself:</strong> Transition from broad discussions on scientific implications and innovations to a precise exposition of the invention’s structure, methodology, and functionality. This shift ensures the narrative is specifically centered on the patentable aspects of the invention.</p>
+<p>•	<strong>Emphasize Claimed Features:</strong> Describe the invention’s specific features designated for claims, emphasizing their roles and relationships in fulfilling the invention’s objectives. Narrow the focus from a wide-ranging field overview to the specific attributes and functionalities that distinguish the invention.</p>
+<p>•	<strong>Condense Prior Development Discussion:</strong> Limit discussions of previous studies to those that directly contribute to understanding the invention’s novelty or utility. While scientific documents often provide an in-depth exploration of prior work, a patent specification should focus on a concise background that effectively sets the stage for the invention’s contributions and its approach to problem-solving.</p>
+<p>•	<strong>Selective Presentation of Results:</strong> Concentrate on describing results that clearly demonstrate the invention’s advancements beyond existing solutions, steering clear of extensive analysis of controversial or unsupported findings. The included results should decisively demonstrate the invention’s importance, avoiding speculative or ambiguous outcomes.</p>
+<p>•	<strong>Exclude Incomplete or Future Research Discussions:</strong> Avoid references to ongoing or speculative future research endeavors. Patent description should concentrate on the present invention and its current development phase, excluding any speculation about potential future research. Discussions of such a nature could inadvertently reveal undeveloped or unprotected ideas, potentially compromising future patent applications by either narrowing future patent claims or guiding competitors.</p>
+
+        </div>
+        <div class="mt-16"></div>
+        <div class="mb-8 flex items-center border-t pt-8 dark:border-neutral-800 contrast-more:border-neutral-400 dark:contrast-more:border-neutral-400 print:hidden"><a
+        href="/articles/specification/chapter7_brief_description/"
+        title="Brief description"
+        class="flex max-w-[50%] items-center gap-1 py-4 text-base font-medium text-gray-600 transition-colors [word-break:break-word] hover:text-primary-600 dark:text-gray-300 md:text-lg ltr:pr-4 rtl:pl-4"
+      ><svg class="inline h-5 shrink-0 ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Brief description</a><a
+        href="/articles/specification/chapter9_claims/"
+        title="Claims"
+        class="flex max-w-[50%] items-center gap-1 py-4 text-base font-medium text-gray-600 transition-colors [word-break:break-word] hover:text-primary-600 dark:text-gray-300 md:text-lg ltr:ml-auto ltr:pl-4 ltr:text-right rtl:mr-auto rtl:pr-4 rtl:text-left"
+      >Claims<svg class="inline h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
+        
+      </main>
+    </article>
+  </div>
+
+      <footer class="hextra-footer bg-gray-100 pb-[env(safe-area-inset-bottom)] dark:bg-neutral-900 print:bg-transparent"><div
+    class="max-w-screen-xl mx-auto flex justify-center py-12 pl-[max(env(safe-area-inset-left),1.5rem)] pr-[max(env(safe-area-inset-right),1.5rem)] text-gray-600 dark:text-gray-400 md:justify-start"
+  >
+    <div class="flex w-full flex-col items-center sm:items-center"><div class="mt-6 text-xs">© 2024 IP BoX</div>
+      
+      
+    </div>
+  </div>
+</footer>
+    
+  </body>
+  <script defer src="/js/main.js" integrity=""></script>
+
+
+<script defer src="/lib/flexsearch/flexsearch.bundle.min.0425860527cc9968f9f049421c7a56b39327d475e2e3a8f550416be3a9134327.js" integrity="sha256-BCWGBSfMmWj58ElCHHpWs5Mn1HXi46j1UEFr46kTQyc="></script>
+    <script defer src="/en.search.js" integrity=""></script>
+
+
+</html>

@@ -1,0 +1,6 @@
+---
+title: 
+sidebar:
+  open: false
+---
+

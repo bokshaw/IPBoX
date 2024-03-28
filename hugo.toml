@@ -1,0 +1,96 @@
+
+title = "IPBOX"
+theme = "hextra"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.highlight]
+    noClasses = false
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 1
+  [languages.cn]
+    languageName = "简体中文"
+    languageCode = "cn"
+    weight = 2
+
+[[menu.main]]
+  identifier = "drafting"
+  name = "PATENT DRAFTING"
+  pageRef = "/articles/specification"
+  weight = 1
+
+[[menu.main]]
+  identifier = "documents"
+  name = "DOCS"
+  pageRef = "/docs/application"
+  weight = 2
+
+[[menu.main]]
+  identifier = "about"
+  name = "ABOUT"
+  pageRef = "/about/"
+  weight = 3
+
+# [[menu.main]]
+#   name = "Patent Application"
+#   identifier = "docs1"
+#   pageRef = "/docs/application"
+#   parent = "documents"
+#   weight = 1
+
+# [[menu.main]]
+#   name = "IP"
+#   identifier = "docs2"
+#   pageRef = "/docs/ip"
+#   parent = "documents"
+#   weight = 2
+
+# [[menu.sidebar]]
+#   name = "More"
+#   weight = 1
+#   [menu.sidebar.params]
+#     type = "separator"
+
+# [[menu.sidebar]]
+#   name = "Docs"
+#   url = ""
+#   weight = 2
+
+# [[menu.sidebar]]
+#   [menu.sidebar.params]
+#   type = "separator"
+
+[[menu.sidebar]]
+  name = "About"
+  pageRef = "/about"
+  weight = 4
+
+
+[params]
+  [params.navbar]
+    displayTitle = true
+    displayLogo = true
+    [params.navbar.logo]
+      path = "images/logo.svg"
+      dark = "images/logo_dark.svg"
+      link = "/"
+      width = 20
+      height = 20
+
+  [params.footer]
+    displayCopyright = true
+    displayPoweredBy = false
+
+  [params.editURL]
+    enable = false
+    base = "https://github.com/"
+
