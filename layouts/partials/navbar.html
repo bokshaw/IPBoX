@@ -3,6 +3,7 @@
 {{- $logoWidth := .Site.Params.navbar.logo.width | default "20" -}}
 {{- $logoHeight := .Site.Params.navbar.logo.height | default "20" -}}
 {{- $logoDarkPath := .Site.Params.navbar.logo.dark | default $logoPath -}}
+{{- $displayThemeToggle := site.Params.theme.displayToggle | default true -}}
 
 {{- $navWidth := "max-w-[90rem]" -}}
 {{- with .Site.Params.navbar.width -}}
@@ -118,7 +119,7 @@
       </div>
     </div>
     {{- partial "language-switch.html" (dict "context" .) -}}
-    {{- partial "theme-toggle.html" -}}
+    {{- with $displayThemeToggle }}{{ partial "theme-toggle.html" }}{{ end -}}
 
   </nav>
 </div>

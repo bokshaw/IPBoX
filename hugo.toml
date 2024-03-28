@@ -94,3 +94,8 @@ defaultContentLanguageInSubdir = true
     enable = false
     base = "https://bokshaw.github.io/ipbox/"
 
+  [params.theme]
+  # light | dark | system
+    default = "light"
+    displayToggle = true
+
