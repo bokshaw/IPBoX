@@ -82,7 +82,7 @@ defaultContentLanguageInSubdir = true
     [params.navbar.logo]
       path = "images/logo.svg"
       dark = "images/logo_dark.svg"
-      link = "/"
+      link = "/ipbox"
       width = 20
       height = 20
 
