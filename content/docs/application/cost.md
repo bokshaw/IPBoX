@@ -24,7 +24,7 @@ _Note:_ The $128 small entity filing fee for a utility application is further re
 
 
 
-### Costs for professional services:
+### Costs for professional services
 
 - **Drafting**: Patent attorneys typically charge $5,000 to $15,000 to draft a utility application. More complex inventions, like those in biotechnology or software, may incur higher drafting costs. Drawings are generally expected from the inventor.
 - **Filing an Application**: Filing services like docketing, document preparation, monitoring, etc. average around $1,000.
