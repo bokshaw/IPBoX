@@ -42,7 +42,7 @@
 
   <script>
      
-    const defaultTheme = 'system';
+    const defaultTheme = 'light';
 
     const setDarkTheme = () => {
       document.documentElement.classList.add("dark");
@@ -138,7 +138,16 @@
           >简体中文<span class="absolute inset-y-0 flex items-center ltr:right-3 rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
         </li>
       </ul>
-  </div></nav>
+  </div><button
+  title="切换主题"
+  data-theme="light"
+  class="theme-toggle group h-7 rounded-md px-2 text-left text-xs font-medium text-gray-600 transition-colors dark:text-gray-400 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-primary-100/5 dark:hover:text-gray-50"
+  type="button"
+  aria-label="切换主题"
+>
+  <div class="flex items-center gap-2 capitalize"><svg height=12 class="group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="group-data-[theme=light]:hidden">浅色</span><svg height=12 class="group-data-[theme=dark]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="group-data-[theme=dark]:hidden">深色</span></div>
+</button>
+</nav>
 </div><div class="mx-auto flex max-w-screen-xl">
     <div class="mobile-menu-overlay [transition:background-color_1.5s_ease] fixed inset-0 z-10 bg-black/80 dark:bg-black/60 hidden"></div>
 <aside class="sidebar-container flex flex-col print:hidden md:top-16 md:shrink-0 md:w-64 md:self-start max-md:[transform:translate3d(0,-100%,0)] md:hidden xl:block">
@@ -194,9 +203,17 @@
         <ul class='relative flex flex-col gap-1 before:absolute before:inset-y-1 before:w-px before:bg-gray-200 before:content-[""] ltr:ml-3 ltr:pl-3 ltr:before:left-0 rtl:mr-3 rtl:pr-3 rtl:before:right-0 dark:before:bg-neutral-800'><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/cn/docs/application/ids/"
+    href="/cn/docs/application/cost/"
     
-  >信息披露声明
+  >实用专利成本
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/cn/docs/application/overcomingpriorart/"
+    
+  >发表的论文对专利的影响
     </a>
               
             </li><li class="flex flex-col "><a
@@ -210,9 +227,17 @@
             </li><li class="flex flex-col "><a
     class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
-    href="/cn/docs/application/overcomingpriorart/"
+    href="/cn/docs/application/ids/"
     
-  >发表的论文对专利的影响
+  >信息披露声明
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="flex items-center justify-between gap-2 cursor-pointer rounded px-2 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 contrast-more:border contrast-more:border-transparent contrast-more:text-gray-900 contrast-more:hover:border-gray-900 dark:text-neutral-400 dark:hover:bg-primary-100/5 dark:hover:text-gray-50 contrast-more:dark:text-gray-50 contrast-more:dark:hover:border-gray-50"
+    href="/cn/docs/application/patentwordtemplate/"
+    
+  >创建专利说明书Word模板
     </a>
               
             </li></ul>
@@ -304,20 +329,31 @@
         <div class="content"></div>
         
           <div class="mb-10">
-            <h3><a style="color: inherit; text-decoration: none;" class="block font-semibold mt-8 text-2xl " href="/cn/docs/application/ids/">美国专利申请的信息披露声明</a></h3><p class="opacity-80 mt-4 leading-7">信息披露声明（Information Disclosure Statement, IDS）是提交给美国专利商标局（USPTO）的一份文件，详细描述了对专利申请审查有重要性的参考文献和相关信息。准备和申请美国专利的个人有义务和责任向美国专利商标局（USPTO）报告任何可能对申请审查有重大影响的参考文献或信息。这一义务持续到专利被授权。根据37 C.F.R. §1.56(c)，这一义务适用于发明人、授权人的雇员以及美国和外国的律师和代理人。
-信息披露声明需要包括的内容提交IDS时，主要包括的信息和内容:
-参考文献和相关的信息:
-所有已知的与发明的专利性相关的参考文献或信息。这包括以前的专利、已发表的专利申请、期刊文章和其他出版物。 国外的专利文件:
-国外专利局提交的专利申请或相关PCT申请的国际搜索报告中引用的参考文献。 相关的通讯信息:
-在相关申请中与国外专利局的相关通讯信息，这些信息可能影响当前申请的专利性。 相关的翻译文件:
-对非英文参考文献的简要说明及其相关性，如果有现成的英文翻译，请一并提供。 IDS费用和要求IDS提交时间 费用及额外要求 第一次审查意见下发之前 无费用 第一次审查意见下发之后 提供§1.97(e)声明时无费用 未提供§1.97(e)声明时260美元 最终审查意见或者授权通知下发后 需要§1.97(e)声明，费用为260美元 未提供§1.97(e)声明时不被接受 缴纳专利许可费后 不被接受 美国专利商标局（USPTO）自2022年10月3日起对信息披露声明（IDS）实施了最新的费用，费用从180美元上涨至260美元。鉴于IDS提交费用的大幅上涨，申请人在美国专利审查意见（Office Action）过程中应特别注意提交的时机。特别是在第一次审查意见或授权通知之后，熟悉IDS提交的时间点至关重要，以避免产生额外成本。在专利申请过程中，关于IDS提交的时机和必要性的策略可以有效控制专利申请的费用。最重要的是尽量避免晚递交IDS导致的提交继续审查请求（RCE）。
-信息披露声明（IDS）简单提交指南在第一次审查意见之前的IDS：
-在最初申请的前三个月内无需支付USPTO费用。由于USPTO很少在此期间发布第一次审查意见，这一规则很少应用。 在最初三个月之后，如果在第一次审查意见发布之前提交IDS，仍可以避免支付USPTO费用 [参见 37 CFR 1.97(b)(3)]。 如果已提交继续审查请求（Request for Continued Examination, RCE），则在第一次（继RCE后的）审查意见发布之前提交IDS无需官方费用 [参见 37 CFR 1.97(b)(4)]。 在第一次审查意见之后但在最终审查意见或授权通知之前：
-在第一次审查意见发布后提交的IDS需要： 根据37 C.F.R. §1.97(e)的声明，需确认信息披露声明中的每一项信息都是在提交IDS前不超过三个月内首次被外国专利局在对应外国申请的沟通中引用的，或声明这些信息在提交IDS前三个月以上并未被37 CFR 1.56(c)中指定的任何个人所知晓。 如果无法提供此类声明，则需提交260美元费用和费用转交表格。 在最终审查意见或授权通知之后：
-在最终审查意见或授权通知发布后但在缴纳授权费之前提交的IDS必须包括一份§1.97(e)声明和260美元费用。 如果未提供§1.97(e)声明，USPTO将不会考虑这些信息，此时将需要提交继续审查请求（RCE）或其他继续程序。 在缴纳授权费之后：
-在缴纳授权费之后提交的IDS将不会被USPTO考虑。 若要使IDS被考虑，需要提交撤回授权申请的请求书以及继续审查请求（RCE）或其他继续程序。 对专利期限调整的影响：
-如果IDS未在37 CFR 1.56(c)中指定的任何个人接收到信息后的30天内提交，可能会减少专利期限调整。 为避免可能的专利期限调整减少，请包括一份声明，确认每一项信息都是在提交IDS前不超过30天内被外国专利局引用的。 针对缴纳授权费后，或在最终审查意见或授权通知之后不能提供§1.97(e)声明时的可选操作如果您需要在缴纳授权费或在最终审查意见或授权通知之后提交IDS，但无法提供§1.97(e)声明，请考虑以下选项：
-提交继续审查请求（RCE）：</p>
+            <h3><a style="color: inherit; text-decoration: none;" class="block font-semibold mt-8 text-2xl " href="/cn/docs/application/cost/">申请美国专利的费用</a></h3><p class="opacity-80 mt-4 leading-7">概述申请美国实用专利的相关费用，包括美国专利商标局（USPTO）的官方费用和专业服务费用。USPTO的费用因申请人类型（大型实体、小型实体、微型实体）而异，涵盖申请费、检索费、审查费等。此外，文章还提及了获得专利授权后需缴纳的发证费，以及PCT美国国家阶段申请的特别费用。专业服务费用包括撰写专利说明书、提交申请、回复审查意见等，总体费用可能从$10,000至$30,000不等，对于复杂发明或漫长审查过程，费用更是可达$20,000至$50,000或更高。文章强调了提前进行详细费用规划的重要性，以确保申请过程中有足够预算。</p>
+            <p class="opacity-80 mt-1 leading-7">
+              <a class="text-[color:hsl(var(--primary-hue),100%,50%)] underline underline-offset-2 decoration-from-font" href="/cn/docs/application/cost/">更多 →</a>
+            </p>
+            <p class="opacity-50 text-sm mt-4 leading-7">May 6, 2023</p>
+          </div>
+        
+          <div class="mb-10">
+            <h3><a style="color: inherit; text-decoration: none;" class="block font-semibold mt-8 text-2xl " href="/cn/docs/application/overcomingpriorart/">已发表论文对专利申请的影响及解决策略</a></h3><p class="opacity-80 mt-4 leading-7">讨论已发表论文对美国专利申请资格的影响及相关解决策略。美国专利法规定，如果发明在申请日期之前已经公开披露，如通过发表论文、公开演示或在线发布等方式，可能会使该发明失去专利资格。然而，美国提供了一年的宽限期，允许发明人在首次公开披露发明后的一年内提交专利申请。本文进一步介绍了如何在学术出版和专利申请之间找到平衡，特别是如何在宽限期内有效利用时间，以及如何通过提交宣誓书或声明来应对可能的专利申请拒绝。文章还强调了发明权与作者权的区别，提醒发明人在确定专利发明人时需谨慎，确保正确识别所有对发明有重大贡献的人员。</p>
+            <p class="opacity-80 mt-1 leading-7">
+              <a class="text-[color:hsl(var(--primary-hue),100%,50%)] underline underline-offset-2 decoration-from-font" href="/cn/docs/application/overcomingpriorart/">更多 →</a>
+            </p>
+            <p class="opacity-50 text-sm mt-4 leading-7">December 6, 2023</p>
+          </div>
+        
+          <div class="mb-10">
+            <h3><a style="color: inherit; text-decoration: none;" class="block font-semibold mt-8 text-2xl " href="/cn/docs/application/checklistforpatentfiling/">美国专利申请清单</a></h3><p class="opacity-80 mt-4 leading-7">美国专利申请的简明清单，以及所需文件的简要介绍。清单包括专利说明书、申请资料表、专利申请表、宣誓书或声明、信息披露声明、小型和微型实体状态以及费用表等关键组成部分。此外，还简要介绍了每份文件的主要内容和作用，为准备美国专利申请的个人或机构提供了一个概览和参考指南。</p>
+            <p class="opacity-80 mt-1 leading-7">
+              <a class="text-[color:hsl(var(--primary-hue),100%,50%)] underline underline-offset-2 decoration-from-font" href="/cn/docs/application/checklistforpatentfiling/">更多 →</a>
+            </p>
+            <p class="opacity-50 text-sm mt-4 leading-7">June 2, 2023</p>
+          </div>
+        
+          <div class="mb-10">
+            <h3><a style="color: inherit; text-decoration: none;" class="block font-semibold mt-8 text-2xl " href="/cn/docs/application/ids/">美国专利申请的信息披露声明</a></h3><p class="opacity-80 mt-4 leading-7">信息披露声明（Information Disclosure Statement, IDS）是向美国专利商标局（USPTO）提交的一份关键文件，旨在详细介绍对专利申请审查具有重要性的参考文献和相关信息。本文解释了准备和申请美国专利时，申请人有义务报告任何可能对审查产生重大影响的信息，这一责任持续至专利授权。文中详细列出了IDS应包含的内容，包括参考文献、国外专利文件、相关通讯信息及相关翻译文件等，并介绍了提交IDS的费用和时间要求，以及在不同阶段提交IDS的具体指南，确保申请人能有效控制费用并避免晚提交导致的额外成本。</p>
             <p class="opacity-80 mt-1 leading-7">
               <a class="text-[color:hsl(var(--primary-hue),100%,50%)] underline underline-offset-2 decoration-from-font" href="/cn/docs/application/ids/">更多 →</a>
             </p>
@@ -325,24 +361,15 @@
           </div>
         
           <div class="mb-10">
-            <h3><a style="color: inherit; text-decoration: none;" class="block font-semibold mt-8 text-2xl " href="/cn/docs/application/checklistforpatentfiling/">美国专利申请清单</a></h3><p class="opacity-80 mt-4 leading-7">专利申请清单专利说明书 Specification 申请资料表 Application Data Sheet 专利申请表 Utility Patent Application Transmittal 宣誓书或声明 Oath or Declaration 信息披露声明 Information Disclosure Statement, IDS 小型和微型实体 Small and Micro Entity Status 费用表 Fee Transmittal 🗹 专利说明书 Specification专利申请中的说明书是构成申请核心的综合性书面文件。说明书旨在清晰、全面地描述发明，以便同行理解、制作和使用该发明。它必须足够详尽以满足法律要求并支持关于发明的主张。
-书面说明书 Written SpecificationTitle of the Invention: 简短但技术性的标题，准确反映发明的性质。 Cross-Reference to Related Applications: 任何相关的其他专利申请。 Background of the Invention: 讨论发明领域，并描述发明旨在解决的背景信息和问题。 Summary of the Invention: 对发明进行简洁的总结，突出其主要方面和优点。通常情况可以是对专利权限的总结。 Brief Description of the Drawings: 如包含图，对每个图表进行简要描述。 Detailed Description: 这是最重要的部分，提供了关于发明如何工作及其制作方式的全面解释。这部分通常包括发明的详尽的介绍。美国专利没有具体对实施例的要求，而是要求专利的可用性（enablement），即专利说明书应为具有相关技能的技术人员提供明确的实施指导。 Claims: 定义所寻求的专利保护范围。权利要求是申请的法律操作部分，对确定专利权范围至关重要。 Abstract of the Disclosure: 对发明的简要总结，旨在快速理解其性质和实质。 专利附图 Drawings虽然图是说明书的一部分，但在提交专利申请时，最好将书面说明书和图分成两个单独的文件提交。这种分成两个不同文件的做法——书面说明书和图——解决了潜在的格式问题。书面说明书现在美国专利局要求以Word DOCX文档形式提交。但作为对书面描述的视觉说明和补充，图仍可以提交适合视觉内容的格式，如PDF。这种方法确保了申请的两个方面都清晰呈现，避免了将它们合并到一个Word文件中可能出现的格式问题。</p>
+            <h3><a style="color: inherit; text-decoration: none;" class="block font-semibold mt-8 text-2xl " href="/cn/docs/application/patentwordtemplate/">创建简洁美观的专利说明书Word模板</a></h3><p class="opacity-80 mt-4 leading-7">美国专利商标局（USPTO）已采用DOCX格式用于提交专利申请，并已停止了使用多年的Patent PAIR服务，转而采用新的Patent Center系统。DOCX是通用的WORD文字处理软件的文件格式，得到了Microsoft Word 2007或更高版本、Google Docs、Office Online、LibreOffice和苹果Pages的支持。从2024年1月17日起，未使用DOCX格式提交的专利说明书将收取高达400美元的非DOCX附加费。 USPTO提供了两个专利说明书的模板，可以借用这两个模板作为最初模板。USPTO的WORD模板满足基本的格式要求，如适当的页面大小、边距和页码。但为了使模板更适用于专利写作，可以考虑对此进行些修改。
+布局页面大小和边距：使用Letter或A4页面大小。WORD默认的1英寸边距设置符合美国专利商标局的要求。
+纸张方向：所有纸张页面应以纵向模式显示。若表格或图尺寸过大，可相应将其旋转，以确保适应纵向页面布局。。任何页面都不要使用横向方向，因为Patent Center会拒绝含有横向页面的文档。 字体选择合适的字体： 选择常用的字体，例如Times New Roman、Arial、Helvetica等。建议使用Times New Roman，因为它是法律文件、学术和科研出版物中通常采纳的字体。
+应用统一的字体风格： 为了确保全文的一致性，应将说选定的字体（建议为Times New Roman）应用于“标题”（title and headings）和“段落”样式。
+设置标准字体大小： 将全文的字体大小设置为12点。这符合法律文件通常采用的10至12点的标准字体大小范围。
+段落USPTO的DOCX模板中设置了一个List Paragraph样式。为了更清洁的外观，修改段落样式，将左缩进（Left Indentation）设置为0，行间距(Line Spacing)设置为1.5行。 项目符号列表设置List Paragraph中的&#34;项目符号列表&#34;（Numbering）为：0001、0002、0003、… （注意不要选用 01，02，03…或 001， 002， 003格式） 应用列表段落样式重置列表段落后，将此样式应用于正文（title, claim和abstract除外）。
+标题样式确保title为标题或标题1（Title or Heading 1），claim和abstract设置为标题1（Heading 1），而“SUMMARY OF THE INVENTION,” “BRIEF DESCRIPTION OF DRAWINGS,” “DETAILED DESCRIPTION OF THE INVENTION””等设置为标题2 (Heading 2)。这将便于在USPTO的Patent Center更容易地自动区分专利正文，claim和abstract各个部分。 删除不必要的标题根据您的文档需求，删除非必要的标题，保留需要的，如保留“BACKGROUND OF THE INVENTION”和 “TECHNICAL FIELD OF THE INVENTION”等。</p>
             <p class="opacity-80 mt-1 leading-7">
-              <a class="text-[color:hsl(var(--primary-hue),100%,50%)] underline underline-offset-2 decoration-from-font" href="/cn/docs/application/checklistforpatentfiling/">更多 →</a>
-            </p>
-            <p class="opacity-50 text-sm mt-4 leading-7">January 1, 2020</p>
-          </div>
-        
-          <div class="mb-10">
-            <h3><a style="color: inherit; text-decoration: none;" class="block font-semibold mt-8 text-2xl " href="/cn/docs/application/overcomingpriorart/">已发表论文对专利申请的影响及解决策略</a></h3><p class="opacity-80 mt-4 leading-7">公开披露一项发明通常会使其失去后续专利申请的资格。美国专利法有如下无法获得专利的规定，35 U.S.C. 102(a)(1)：
-(1) 被授权专利，描述在印刷出版物中，或在公共使用中，出售，或在申请的发明的有效申请日期之前以其他方式向公众公开。
-(1) Patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention.
-其中，“otherwise available to the public”，“以其他方式向公众公开”，广泛涵盖了发明在其有效申请日期之前的任何公开披露。无论发明是否已经正式获得专利，出版或出售，公开披露包括多种形式。公开方式可以是公开演示、口头报告、在线披露、发表的学术作品，甚至非正式的公共使用。
-在提交专利申请之前保持发明的机密性至关重要，因为任何公开披露都可能危及其专利性。然而，美国提供了一年的宽限期，允许发明人在出版后一年内申请专利。根据35 U.S.C. 102(b)(1)(A)，在申请的发明的有效申请日期之前一年或不到一年内做出的披露，如果：
-(A) 披露是由发明人或共同发明人做出的，或者由直接或间接从发明人或共同发明人获得所披露主题的其他人做出的。
-(A) the disclosure was made by the inventor or joint inventor, or by another who obtained the subject matter directly or indirectly from the inventor or a joint inventor.</p>
-            <p class="opacity-80 mt-1 leading-7">
-              <a class="text-[color:hsl(var(--primary-hue),100%,50%)] underline underline-offset-2 decoration-from-font" href="/cn/docs/application/overcomingpriorart/">更多 →</a>
+              <a class="text-[color:hsl(var(--primary-hue),100%,50%)] underline underline-offset-2 decoration-from-font" href="/cn/docs/application/patentwordtemplate/">更多 →</a>
             </p>
             <p class="opacity-50 text-sm mt-4 leading-7"></p>
           </div>

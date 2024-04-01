@@ -58,6 +58,18 @@
   </url><url>
     <loc>//localhost:1313/articles/specification/chapter10_abstract/</loc>
   </url><url>
+    <loc>//localhost:1313/docs/application/cost/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="//localhost:1313/cn/docs/application/cost/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/docs/application/cost/"
+                />
+  </url><url>
     <loc>//localhost:1313/</loc>
     <xhtml:link
                 rel="alternate"
@@ -140,6 +152,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/articles/specification/"
+                />
+  </url><url>
+    <loc>//localhost:1313/docs/application/patentwordtemplate/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="//localhost:1313/cn/docs/application/patentwordtemplate/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/docs/application/patentwordtemplate/"
                 />
   </url><url>
     <loc>//localhost:1313/tags/</loc>
