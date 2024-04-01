@@ -5,11 +5,8 @@ toc: true
 ---
 
 The United States Patent and Trademark Office (USPTO) has embraced DOCX format for patent application submissions through its [Patent Center](https://patentcenter.uspto.gov/). DOCX, a word processing file format based on open standards, including Extensible Markup Language (XML), is supported by Microsoft Word 2007 or higher, Google Docs, Office Online, LibreOffice, and Pages for Mac. From January 17, 2024, new nonprovisional 111(a) applications not filed in DOCX will incur a non-DOCX surcharge of up to $400.
-![](/images/docs/uspto_docx.png)
 
 The USPTO offers two [DOCX templates](https://www.uspto.gov/patents/docx) as starting points for drafting your patent. These templates come with essential formatting features like proper page size, margins, and page numbering. To tailor the template for technical writing, consider the following modifications:
-
-
 
 {{% steps %}}
 
@@ -17,7 +14,7 @@ The USPTO offers two [DOCX templates](https://www.uspto.gov/patents/docx) as sta
 
 **Page Size and Margins:** Use Letter or A4 page size with the default 1-inch margins. The default margin setting comply with USPTO requirements.  
 
-**Orientation:** Display all tables or figures in portrait mode. If necessary, rotate large tables or figures to fit within portrait orientation. Do not use landscape orientation for any page, since the Patent Center rejects the document with landscape pages.
+**Orientation:** Display all pages in portrait mode, including those with large tables or figures. If necessary, rotate the large tables or figures to fit within the portrait orientation. Do not use landscape orientation for any pages, as the Patent Center rejects documents containing landscape pages.
 ![](/images/docs/WordLayout.png)
 
 ### Font
@@ -38,7 +35,7 @@ The USPTO offers two [DOCX templates](https://www.uspto.gov/patents/docx) as sta
 Set the **Numbering** style in the **List Paragraph** as: 0001, 0002, 0003, … (Not 01, 02, 03 … or 001, 002, 003 …)
 ![](/images/docs/WordNumbering.png)
 
-### Applying the List Paragraph Style
+### List Paragraph Style
 
 After resetting the List Paragraph, apply this style to the main text (excluding headings).
 

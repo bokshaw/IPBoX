@@ -2,10 +2,10 @@
 title: 创建简洁美观的专利说明书Word模板
 linkTitle: 创建专利说明书Word模板
 toc: true
+description: USPTO提供了两个专利说明书的模板，可以借用这两个模板作为最初模板。USPTO的WORD模板满足基本的格式要求，如适当的页面大小、边距和页码。但为了使模板更适用于专利写作，可以考虑对此进行些修改。
 ---
 
 美国专利商标局（USPTO）已采用DOCX格式用于提交专利申请，并已停止了使用多年的Patent PAIR服务，转而采用新的[Patent Center](https://patentcenter.uspto.gov/)系统。DOCX是通用的WORD文字处理软件的文件格式，得到了Microsoft Word 2007或更高版本、Google Docs、Office Online、LibreOffice和苹果Pages的支持。从2024年1月17日起，未使用DOCX格式提交的专利说明书将收取高达400美元的非DOCX附加费。
-![](/images/docs/uspto_docx.png)
 
 USPTO提供了[两个专利说明书的模板](https://www.uspto.gov/patents/docx)，可以借用这两个模板作为最初模板。USPTO的WORD模板满足基本的格式要求，如适当的页面大小、边距和页码。但为了使模板更适用于专利写作，可以考虑对此进行些修改。
 
