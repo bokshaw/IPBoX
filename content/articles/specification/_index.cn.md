@@ -5,7 +5,7 @@ sidebar:
   open: false
 ---
 
-{{< figure src="../../../images/cover5.png" link="chapter1_introduction" class="mx-auto items-center">}}
+[![](/images/cover5.png)](chapter1_introduction)
 
 <div class="d-flex flex-column justify-content-center">
               <h5 class="fw-bold display-6  text-center ">Patent Drafting Essentials</h3>
