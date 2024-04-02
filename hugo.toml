@@ -82,7 +82,7 @@ defaultContentLanguageInSubdir = true
     [params.navbar.logo]
       path = "images/logo.svg"
       dark = "images/logo_dark.svg"
-      link = "/ipbox"
+      link = ""
       width = 20
       height = 20
 
@@ -92,7 +92,7 @@ defaultContentLanguageInSubdir = true
 
   [params.editURL]
     enable = false
-    base = "https://bokshaw.github.io/ipbox/"
+    base = "boarca.com"
 
   [params.theme]
   # light | dark | system
