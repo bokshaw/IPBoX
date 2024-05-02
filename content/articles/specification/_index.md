@@ -1,5 +1,5 @@
 ---
-linkTitle: "PATENT DRAFT ESSENTIALS"
+linkTitle: "PATENT DRAFTING ESSENTIALS"
 layout: coverpage
 sidebar:
   open: false
