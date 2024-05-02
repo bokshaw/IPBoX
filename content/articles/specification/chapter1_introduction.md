@@ -19,7 +19,7 @@ The specification typically includes various sections, each designed to provide 
 
 - [**Title**](/en/articles/specification/chapter2_title): Should be concise, yet descriptive enough to give a clear indication of the nature of the invention.
 
-- [**Cross-Reference to Related Applications**](/en/articles/specification/chapter3_cross-reference): If applicable, this section references any related patent applications, providing a connection to earlier works.
+- [**Cross-Reference to Related Applications**](/en/articles/specification/chapter3_crossreference): If applicable, this section references any related patent applications, providing a connection to earlier works.
 
 - [**Technical Field**](/en/articles/specification/chapter4_tech_field): Outlines the specific field of technology to which the invention pertains, setting the stage for understanding its relevance and context.
 
