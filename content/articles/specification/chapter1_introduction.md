@@ -17,23 +17,23 @@ A patent application should fully and clearly disclose the invention. Such discl
 
 The specification typically includes various sections, each designed to provide a comprehensive picture of the invention. These sections ensure that all essential details are communicated clearly and effectively. The following are some commonly applied sections in the specification:
 
-- [**Title**](/docs/specification/chapter2_title): Should be concise, yet descriptive enough to give a clear indication of the nature of the invention.
+- [**Title**](/articles/specification/chapter2_title): Should be concise, yet descriptive enough to give a clear indication of the nature of the invention.
 
-- [**Cross-Reference to Related Applications**](/docs/specification/chapter3_cross-reference): If applicable, this section references any related patent applications, providing a connection to earlier works.
+- [**Cross-Reference to Related Applications**](/articles/specification/chapter3_cross-reference): If applicable, this section references any related patent applications, providing a connection to earlier works.
 
-- [**Technical Field**](/docs/specification/chapter4_tech_field): Outlines the specific field of technology to which the invention pertains, setting the stage for understanding its relevance and context.
+- [**Technical Field**](/articles/specification/chapter4_tech_field): Outlines the specific field of technology to which the invention pertains, setting the stage for understanding its relevance and context.
 
-- [**Background of the Invention**](/docs/specification/chapter5_background): Describes the field of the invention and discusses existing problems or limitations that the invention addresses.
+- [**Background of the Invention**](/articles/specification/chapter5_background): Describes the field of the invention and discusses existing problems or limitations that the invention addresses.
 
-- [**Summary of the Invention**](/docs/specification/chapter6_summary): Concisely explains the invention, its advantages, and how it solves problems identified in the Background.
+- [**Summary of the Invention**](/articles/specification/chapter6_summary): Concisely explains the invention, its advantages, and how it solves problems identified in the Background.
 
-- [**Brief Description of Drawings**](/docs/specification/chapter7_brief_description): Describes what each view represents if drawings are included.
+- [**Brief Description of Drawings**](/articles/specification/chapter7_brief_description): Describes what each view represents if drawings are included.
 
-- [**Detailed Description of the Invention**](/docs/specification/chapter8_detailed_description): The most comprehensive part, detailing how the invention works, its variations, and potential implementations.
+- [**Detailed Description of the Invention**](/articles/specification/chapter8_detailed_description): The most comprehensive part, detailing how the invention works, its variations, and potential implementations.
 
-- [**Claims**](/docs/specification/chapter9_claims): Define the scope of protection sought. They must be clear, specific, and supported by the Description.
+- [**Claims**](/articles/specification/chapter9_claims): Define the scope of protection sought. They must be clear, specific, and supported by the Description.
 
-- [**Abstract**](/docs/specification/chapter10_abstract): Provides a brief overview of the invention, focusing on what is new in the art to which it pertains.
+- [**Abstract**](/articles/specification/chapter10_abstract): Provides a brief overview of the invention, focusing on what is new in the art to which it pertains.
 
 Understanding the purpose and requirements of each of these sections is essential for drafting a patent specification that not only meets legal standards but also effectively communicates the invention to the patent office, potential licensees, and the public. The subsequent chapters of this guide will delve deeper into each of these sections, offering insights and practical tips for navigating the complexities of patent drafting.
 
